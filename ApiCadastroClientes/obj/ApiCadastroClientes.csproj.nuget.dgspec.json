@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj": {}
+    "C:\\Users\\ivan.pontes\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj": {
+    "C:\\Users\\ivan.pontes\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
+        "projectUniqueName": "C:\\Users\\ivan.pontes\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
         "projectName": "ApiCadastroClientes",
-        "projectPath": "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
+        "projectPath": "C:\\Users\\ivan.pontes\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
         "packagesPath": "C:\\Users\\ivan.pontes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\obj\\",
+        "outputPath": "C:\\Users\\ivan.pontes\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivan.pontes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.6, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.11.0, )"
             }
           },
           "imports": [

@@ -116,7 +116,7 @@ namespace ApiCadastroClientes
 
         // DELETE api/<ClientsController>/5
         [HttpDelete("{id}")]
-        public void DeleteClient(int id)
+        public async Task<IActionResult> DeleteClient(int id)
         {
             if (!ModelState.IsValid)
             {

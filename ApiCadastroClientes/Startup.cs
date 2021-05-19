@@ -15,7 +15,9 @@ using System.Threading.Tasks;
 namespace ApiCadastroClientes
 {
     public class Startup
-    {
+    {   
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public Startup(IWebHostEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -30,7 +32,18 @@ namespace ApiCadastroClientes
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
-        {
+        {   
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                              builder =>
+                              {
+                                  builder.WithOrigins("http://localhost:4200",
+                                                      "http://localhost:5000").AllowAnyHeader()
+                                                                              .AllowAnyMethod();
+                              });
+            });
+
             services.AddControllers().AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
@@ -51,12 +64,10 @@ namespace ApiCadastroClientes
 
             app.UseRouting();
 
+            app.UseCors(MyAllowSpecificOrigins);
+
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapControllerRoute(
-                //            name: "default",
-                //            pattern: "{controller=Home}/{action=Index}/{id?}");
-
                 endpoints.MapControllers();
 
             });
