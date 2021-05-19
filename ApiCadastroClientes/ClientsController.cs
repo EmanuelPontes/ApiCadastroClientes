@@ -53,7 +53,7 @@ namespace ApiCadastroClientes
                 return BadRequest(ModelState);
             }
 
-            var client = await _context.Clients.SingleOrDefaultAsync(m => m.id == id);
+            var client = await _context.Clients.SingleOrDefaultAsync(c => c.id == id);
 
             if (client == null)
             {
@@ -116,8 +116,23 @@ namespace ApiCadastroClientes
 
         // DELETE api/<ClientsController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void DeleteClient(int id)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var client = await _context.Clients.SingleOrDefaultAsync(c => c.id == id);
+            if (client == null)
+            {
+                return NotFound();
+            }
+
+            _context.Clients.Remove(client);
+            await _context.SaveChangesAsync();
+
+            return Ok(client);
         }
 
         private bool ClienteExists(int id)
