@@ -59,12 +59,18 @@ namespace ApiCadastroClientes
                 app.UseDeveloperExceptionPage();
             }
 
+
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             app.UseRouting();
 
             app.UseCors(MyAllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {
+                
                 endpoints.MapControllers();
 
             });
