@@ -37,3 +37,6 @@ C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\ob
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\ref\ApiCadastroClientes.dll
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\ApiCadastroClientes.pdb
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\ApiCadastroClientes.genruntimeconfig.cache
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\bin\Release\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

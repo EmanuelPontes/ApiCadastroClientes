@@ -12,7 +12,7 @@ C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\ob
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\wwwroot\fa-solid-900.efbd5d20e407bbf85f2b.eot
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\wwwroot\index.html
-C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\wwwroot\main.a8693ae23cd496eea622.js
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\wwwroot\main.d39b33ae21e1c645e3ab.js
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\wwwroot\polyfills.5851e6ac6a8655461f26.js
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\wwwroot\runtime.7b63b9fd40098a2e8207.js
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\wwwroot\scripts.ed68c5dd58619a12a3ef.js
@@ -23,6 +23,7 @@ C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\ob
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\ApiCadastroClientes.deps.json
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\ApiCadastroClientes.runtimeconfig.json
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\ApiCadastroClientes.pdb
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
@@ -31,6 +32,8 @@ C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\ob
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
