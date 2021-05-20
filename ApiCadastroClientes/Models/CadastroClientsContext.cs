@@ -19,6 +19,12 @@ namespace ApiCadastroClientes.Models
             modelBuilder.Entity<Client>()
                 .Property(p => p.id)
                 .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Client>()
+                .HasIndex(c => c.cpf)
+                .IsUnique();
+            modelBuilder.Entity<Phone>()
+                .HasIndex(p => p.number)
+                .IsUnique();
             modelBuilder.Entity<Phone>()
                 .Property(p => p.id)
                 .ValueGeneratedOnAdd();
