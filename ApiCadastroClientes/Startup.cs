@@ -77,6 +77,9 @@ namespace ApiCadastroClientes
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDeveloperExceptionPage();
+            
+
             app.UseDefaultFiles();
 
             app.UseStaticFiles();

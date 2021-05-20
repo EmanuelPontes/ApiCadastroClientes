@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\bin\Release</_PublishTargetUrl>
-    <History>True|2021-05-20T19:56:58.0485904Z;True|2021-05-20T13:22:09.3805802-03:00;True|2021-05-20T12:53:24.6905566-03:00;</History>
+    <History>True|2021-05-20T20:25:38.0453460Z;True|2021-05-20T16:56:58.0485904-03:00;True|2021-05-20T13:22:09.3805802-03:00;True|2021-05-20T12:53:24.6905566-03:00;</History>
   </PropertyGroup>
 </Project>
