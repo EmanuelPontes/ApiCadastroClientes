@@ -44,10 +44,7 @@ namespace ApiCadastroClientes
                               });
             });
 
-            services.AddControllers().AddJsonOptions(options =>
-            {
-                options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
-            });
+            services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddDbContext<CadastroClientsContext>(options =>
             {
                 options.UseNpgsql(Configuration.GetConnectionString("ClientesDB"));

@@ -36,7 +36,7 @@ namespace ApiCadastroClientes
                 {
                     phoneArr.Add(phone.number);
                 }
-                clientListWithPhones.Add(new ClientWithPhones(client.client_name, client.cpf, client.birth_date, phoneArr.ToArray()));
+                clientListWithPhones.Add(new ClientWithPhones(client.id, client.client_name, client.cpf, client.birth_date, phoneArr.ToArray()));
             }
 
             return clientListWithPhones;
@@ -44,8 +44,8 @@ namespace ApiCadastroClientes
 
         }
 
-        // GET api/<ClientsController>/5
-        [HttpGet("/{id}")]
+        // GET /<ClientsController>/5
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetClient([FromRoute] int id)
         {
             if (!ModelState.IsValid)
@@ -63,35 +63,40 @@ namespace ApiCadastroClientes
             return Ok(client);
         }
 
-        // POST api/<ClientsController>
+        // POST /<ClientsController>
         [HttpPost("new")]
-        public async Task<IActionResult> PostClient([FromBody] Client client)
+        public async Task<IActionResult> PostClient([FromBody] ClientWithPhones clientWithPhones)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+            
+            Client client = ConvertToModelClient(clientWithPhones);
 
             _context.Clients.Add(client);
             
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetClient), new { id = client.id }, client);
+            return Ok(client.id);
         }
 
-        // PUT api/<ClientsController>/5
-        [HttpPut("/update/{id}")]
-        public async Task<IActionResult> PutClient([FromRoute] int id, [FromBody] Client client)
+        // PUT /<ClientsController>/5
+        [HttpPut("update/{id}")]
+        public async Task<IActionResult> PutClient([FromRoute] int id, [FromBody] ClientWithPhones clientWithPhones)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != client.id)
+            if (id != clientWithPhones.id)
             {
                 return BadRequest();
             }
+
+            Client client = ConvertToModelClient(clientWithPhones);
+            client.id = clientWithPhones.id;
 
             _context.Entry(client).State = EntityState.Modified;
 
@@ -138,6 +143,24 @@ namespace ApiCadastroClientes
         private bool ClienteExists(int id)
         {
             return _context.Clients.Any(e => e.id == id);
+        }
+
+        private Client ConvertToModelClient(ClientWithPhones clientWithPhones) {
+            List<Phone> phones = new List<Phone>();
+            foreach(string phoneNumber in clientWithPhones.phones)
+            {
+                phones.Add(new Phone { number = phoneNumber });
+            }
+
+            Client client = new Client
+            {
+                client_name = clientWithPhones.name,
+                birth_date = clientWithPhones.birthDate,
+                cpf = clientWithPhones.cpf,
+                Phones = phones
+            };
+
+            return client;
         }
     }
 }

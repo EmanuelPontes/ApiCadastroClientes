@@ -64,3 +64,7 @@ C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\ob
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Debug\net5.0\ApiCadastroClientes.RazorTargetAssemblyInfo.cache
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Debug\net5.0\ApiCadastroClientes.csproj.CopyComplete
 C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\obj\Debug\net5.0\ApiCadastroClientes.genruntimeconfig.cache
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\ivan.pontes\Documents\GitHub\ApiCadastroClientes\ApiCadastroClientes\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
