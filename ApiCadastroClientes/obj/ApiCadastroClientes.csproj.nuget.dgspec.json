@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj": {}
+    "C:\\Users\\emanu\\OneDrive\\Documentos\\github\\cadastroUsr\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj": {
+    "C:\\Users\\emanu\\OneDrive\\Documentos\\github\\cadastroUsr\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
+        "projectUniqueName": "C:\\Users\\emanu\\OneDrive\\Documentos\\github\\cadastroUsr\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
         "projectName": "ApiCadastroClientes",
-        "projectPath": "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
-        "packagesPath": "C:\\Users\\ivan.pontes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivan.pontes\\source\\repos\\ApiCadastroClientes\\ApiCadastroClientes\\obj\\",
+        "projectPath": "C:\\Users\\emanu\\OneDrive\\Documentos\\github\\cadastroUsr\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
+        "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emanu\\OneDrive\\Documentos\\github\\cadastroUsr\\ApiCadastroClientes\\ApiCadastroClientes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ivan.pontes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
