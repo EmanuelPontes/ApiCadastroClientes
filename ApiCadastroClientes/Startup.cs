@@ -1,4 +1,5 @@
 using ApiCadastroClientes.Models;
+using ApiCadastroClientes.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,7 +14,7 @@ namespace ApiCadastroClientes
 {
     public class Startup
     {   
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        readonly string MyAllowSpecificOrigins = "AllowSpecificOrigins";
 
         public Startup(IWebHostEnvironment env)
         {
@@ -37,9 +38,10 @@ namespace ApiCadastroClientes
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                               builder =>
                               {
-                                  builder.WithOrigins("http://localhost:4200",
-                                                      "http://localhost:5000").AllowAnyHeader()
-                                                                              .AllowAnyMethod();
+                                 
+                                  builder.WithOrigins(Configuration.GetSection("CorsOrigin").GetSection("CorsOriginAzure").Value)
+                                                                                    .AllowAnyHeader()
+                                                                                    .AllowAnyMethod();
                               });
             });
 
@@ -76,6 +78,12 @@ namespace ApiCadastroClientes
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("X-Xss-Protection", "1");
+                await next();
+            });
 
             app.UseDeveloperExceptionPage();
             

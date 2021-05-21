@@ -1,7 +1,8 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
+using ApiCadastroClientes.Models;
 
-namespace ApiCadastroClientes.Models
+namespace ApiCadastroClientes.Data
 {
     public class CadastroClientsContext : DbContext
     {

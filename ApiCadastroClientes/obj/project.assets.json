@@ -1185,19 +1185,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emanu\\.nuget\\packages\\": {}
+    "C:\\Users\\ivan.pontes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emanu\\OneDrive\\Documentos\\github\\cadastroUsr\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
+      "projectUniqueName": "C:\\Users\\ivan.pontes\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
       "projectName": "ApiCadastroClientes",
-      "projectPath": "C:\\Users\\emanu\\OneDrive\\Documentos\\github\\cadastroUsr\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
-      "packagesPath": "C:\\Users\\emanu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emanu\\OneDrive\\Documentos\\github\\cadastroUsr\\ApiCadastroClientes\\ApiCadastroClientes\\obj\\",
+      "projectPath": "C:\\Users\\ivan.pontes\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
+      "packagesPath": "C:\\Users\\ivan.pontes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ivan.pontes\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\emanu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ivan.pontes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1265,13 +1265,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\emanu\\OneDrive\\Documentos\\github\\cadastroUsr\\ApiCadastroClientes\\ApiCadastroClientes\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

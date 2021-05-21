@@ -1,16 +1,19 @@
 ﻿using ApiCadastroClientes.Models;
+using ApiCadastroClientes.Data;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ApiCadastroClientes
 {
     [Route("/[controller]")]
+    [EnableCors("AllowSpecificOrigins")]
     [ApiController]
     public class ClientsController : ControllerBase
     {   
@@ -149,18 +152,20 @@ namespace ApiCadastroClientes
             List<Phone> phones = new List<Phone>();
             foreach(string phoneNumber in clientWithPhones.phones)
             {
-                phones.Add(new Phone { number = phoneNumber });
+                phones.Add(new Phone { number = HttpUtility.HtmlEncode(phoneNumber) });
             }
 
             Client client = new Client
             {
-                client_name = clientWithPhones.name,
-                birth_date = clientWithPhones.birthDate,
-                cpf = clientWithPhones.cpf,
+                client_name = HttpUtility.HtmlEncode(clientWithPhones.name),
+                birth_date = HttpUtility.HtmlEncode(clientWithPhones.birthDate),
+                cpf = HttpUtility.HtmlEncode(clientWithPhones.cpf),
                 Phones = phones
             };
 
             return client;
         }
+
+    
     }
 }
