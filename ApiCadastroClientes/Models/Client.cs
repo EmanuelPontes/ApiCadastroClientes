@@ -14,7 +14,6 @@ namespace ApiCadastroClientes.Models
         public string client_name { get; set; }
         public string cpf { get; set; }
         public string birth_date { get; set; }
-
         public List<Phone> Phones {get; set;}
     }
 }

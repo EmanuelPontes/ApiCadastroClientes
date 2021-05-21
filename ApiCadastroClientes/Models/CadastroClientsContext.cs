@@ -7,6 +7,7 @@ namespace ApiCadastroClientes.Models
     {
         public DbSet<Client> Clients { get; set; }
         public DbSet<Phone> Phone { get; set; }
+        public DbSet<Admin> Admin { get; set; }
         public CadastroClientsContext(DbContextOptions<CadastroClientsContext> options) :
             base(options)
         {
@@ -18,9 +19,18 @@ namespace ApiCadastroClientes.Models
             modelBuilder.Entity<Client>()
                 .Property(p => p.id)
                 .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Client>()
+                .HasIndex(c => c.cpf)
+                .IsUnique();
+            modelBuilder.Entity<Phone>()
+                .HasIndex(p => p.number)
+                .IsUnique();
             modelBuilder.Entity<Phone>()
                 .Property(p => p.id)
                 .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Admin>().Property(p => p.id)
+                .ValueGeneratedOnAdd();
+            modelBuilder.Entity<Admin>().HasData(new Admin { id = 1, username = "admin", password = "12345" });
         }
     }
 }
